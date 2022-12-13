@@ -44,12 +44,13 @@ public class Main {
         d.print();
 
         System.out.println(d.get(5));
+        System.out.println(d.get(20));
         System.out.println(d.get(6));
 
         d.shrinkSize();
         d.print();
 
-        System.out.println(d.contains(5));
+        System.out.println(d.contains(4));
         System.out.println(d.contains(21));
 
         d.clear();
