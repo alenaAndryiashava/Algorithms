@@ -1,4 +1,5 @@
 package lesson8;
+
 public class Main {
      /*
     TODO:
@@ -34,9 +35,9 @@ public class Main {
         d.add(10);
 
         d.print();
-        d.addAt(6,11);
+        d.addAt(6, 11);
         d.print();
-        
+
 
         d.remove();
         d.remove();
@@ -55,8 +56,6 @@ public class Main {
 
         d.clear();
         d.print();
-        
-
 
 
     }

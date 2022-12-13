@@ -20,6 +20,7 @@ public interface Dynamic {
     void clear();
 
     void shrinkSize();
+
     void print();
 }
 

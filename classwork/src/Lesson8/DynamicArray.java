@@ -1,4 +1,5 @@
 package lesson8;
+
 import java.util.Arrays;
 
 public class DynamicArray implements Dynamic {
@@ -42,8 +43,8 @@ public class DynamicArray implements Dynamic {
 
     @Override
     public int get(int index) {
-        if(index > size){
-            throw  new ArrayIndexOutOfBoundsException();
+        if (index > size) {
+            throw new ArrayIndexOutOfBoundsException();
         }
         return arr[index];
     }
@@ -55,15 +56,15 @@ public class DynamicArray implements Dynamic {
 
     @Override
     public void removeAt(int index) {
-        if(index > size){
+        if (index > size) {
             throw new ArrayIndexOutOfBoundsException();
         }
-        if(index == size){
+        if (index == size) {
             remove();
             return;
         }
         for (int i = index; i < size; i++) {
-            arr[i] = arr[i-1];
+            arr[i] = arr[i - 1];
 
         }
         size--;
@@ -71,7 +72,7 @@ public class DynamicArray implements Dynamic {
 
     @Override
     public void set(int index, int value) {
-        if(index > size){
+        if (index > size) {
             throw new ArrayIndexOutOfBoundsException();
         }
         arr[index] = value;
@@ -94,7 +95,7 @@ public class DynamicArray implements Dynamic {
 
     @Override
     public void clear() {
-        arr = new  int[INITIAL_CAPACITY];
+        arr = new int[INITIAL_CAPACITY];
         capacity = INITIAL_CAPACITY;
         size = 0;
     }
@@ -110,7 +111,8 @@ public class DynamicArray implements Dynamic {
         arr = tempArr;
 
     }
-    public void print(){
+
+    public void print() {
         System.out.println(Arrays.toString(arr));
     }
 
@@ -125,6 +127,7 @@ public class DynamicArray implements Dynamic {
 
         arr = tempArr;
     }
+
     private void growSize(int index) {
         capacity *= 2;
         int[] tempArr = new int[capacity];
