@@ -3,7 +3,6 @@ package Lesson8.dynamicArray;
 //1. Написать метод для поиска n-ного члена в последовательности Фибоначчи через рекурсию
 //2. Найти член, время для которого > 1 минуты, либо происходит StackOverflow
 public class Runner {
-
     static long[] arr;
 
     public static void main(String[] args) {
