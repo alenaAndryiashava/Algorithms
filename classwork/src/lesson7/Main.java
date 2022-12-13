@@ -1,5 +1,5 @@
 package lesson7;
-import Lesson5.MergeSortPractice;
+import lesson5.MergeSortPractice;
 import lesson6.BubbleSort;
 import lesson6.QuickSort;
 
